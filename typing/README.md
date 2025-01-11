@@ -37,9 +37,9 @@ To use this script, you’ll need Python installed. Follow these steps to get st
     Ensure you have Python 3.6 or higher installed. You can download Python from [python.org](https://www.python.org/).
 
 3. **Run the script**:
-    Once Python is installed, you can run the `test.py` file to see the typing animation in action:
+    Once Python is installed, you can run the `testcase.py` file to see the typing animation in action:
     ```bash
-    python test.py
+    python testcase.py
     ```
 
 ## Usage 🔧
