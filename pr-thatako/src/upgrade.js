@@ -4,7 +4,8 @@ const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMembers
-    ]
+    ],
+    permissions: ["ManageRoles"]
 })
 
 const admin = '1243562913885720607'
@@ -70,22 +71,21 @@ client.on('interactionCreate', async interaction => {
                     continue
                 }
 
-                await new Promise(resolve => setTimeout(resolve, 1000))
+                await new Promise(resolve => setTimeout(resolve, Math.floor(Math.random() * 500) + 500))
 
                 await guildMember.roles.remove(classroom[currentLevel])
                 await guildMember.roles.add(classroom[currentLevel + 1])
 
                 upgraded++
 
-                if (upgraded % 5 === 0 || skipped % 5 === 0) await progressMessage.edit(`Progress: ${upgraded} members upgraded, ${skipped} members skipped...`)
+                if (upgraded % 5 === 0 || skipped % 5 === 0) await progressMessage.edit(`Progress: ${upgraded} members upgraded\n-# ${skipped} members skipped...`)
             } catch (error) {
                 console.error(`Error processing member ${guildMember.user.tag}:`, error)
                 continue
             }
         }
 
-        await progressMessage.edit(`✅ Upgrade complete! ${upgraded} members upgraded, ${skipped} members skipped.`)
-
+        await progressMessage.edit(`✅ Upgrade complete! ${upgraded} members upgraded\n-# ${skipped} members skipped.`)
     } catch (error) {
         console.error('Error during upgrade process:', error)
         await progressMessage.edit('❌ An error occurred during the upgrade process.\n-# check console for error message')
