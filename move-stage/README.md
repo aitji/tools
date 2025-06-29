@@ -78,10 +78,10 @@ Before running the bot, you need to configure the following settings in the `CON
 const CONFIG = {
     SERVER_ID: 'your-server-id',
     ALLOWED_ROLES: [
-        'role-id-1',  // Student Council President
-        'role-id-2',  // Student Council Vice President
-        'role-id-3',  // Student Council Secretary
-        'role-id-4'   // Student Council Treasurer
+        'role-id-1',
+        'role-id-2',
+        'role-id-3',
+        'role-id-4'
     ],
     VOICE_CHANNELS: {
         'channel-id-1': 'ﾉ🟢กลุ่มที่ 1  (นิลปัทม์)',
