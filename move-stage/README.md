@@ -45,8 +45,8 @@ To set up the Student Council Voice Manager bot, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-repo/student-council-bot
-    cd student-council-bot
+    git clone https://github.com/aitji/tools
+    cd tools/move-stage
     ```
 
 2. **Install dependencies**:
