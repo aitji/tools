@@ -1,5 +1,9 @@
 # PR-Thatako Role Updater 🛠️
 
+> [!NOTE]
+> ai generate readme.md file btw, im just public code
+> not have time to typing it out sorry!
+
 Discord bot that helps server administrators quickly upgrade roles for eligible members. With the `/upgrade` command, admins can upgrade users in a series of classrooms based on their current roles.
 
 ## Features ✨

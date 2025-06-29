@@ -1,5 +1,9 @@
 # Typing Animation Script 📝
 
+> [!NOTE]
+> ai generate readme.md file btw, im just public code
+> not have time to typing it out sorry!
+
 A customizable typing animation script written in Python. This script simulates typing effects, complete with optional typos and cursor blinking, allowing for more dynamic output in your projects.
 
 ## Features ✨
